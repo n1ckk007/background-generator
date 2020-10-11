@@ -29,9 +29,9 @@ export default class App extends Component {
       ) => this.setState({ monsters: users }));
   }
 
-  handleChange(e) {
+  handleChange = (e) => {
     this.setState({ searchField: e.target.value });
-  }
+  };
 
   render() {
     // filter out the elements in the array based off of the function that we pass it, filter will also give back a new array instead of modifying og array
